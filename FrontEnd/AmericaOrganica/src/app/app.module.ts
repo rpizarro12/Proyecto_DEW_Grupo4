@@ -12,6 +12,8 @@ import { DondeestamosComponent } from './pages/dondeestamos/dondeestamos.compone
 import { ContactanosComponent } from './pages/contactanos/contactanos.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
 import { LoginComponent } from './access/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RegistroComponent } from './access/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { LoginComponent } from './access/login/login.component';
     DondeestamosComponent,
     ContactanosComponent,
     CarritoComponent,
-    LoginComponent
+    LoginComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
