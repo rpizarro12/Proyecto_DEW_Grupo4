@@ -1,1 +1,78 @@
-<p>registro works!</p>
+<div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="h3 mb-3 text-black">Formulario de registro</h2><p>(¿Ya tienes una cuenta? <a routerLink="../login">Inicia sesión)</a></p>
+        </div>
+        <div class="col-md-7">
+          <form [formGroup]="registerForm">
+            <div class="p-3 p-lg-5 border">
+                <div formGroupName="person">
+                    <div class="form-group row">
+                        <div class="col-md-6">
+                        <label for="c_fname" class="text-black">Nombres <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="nombres" name="nombres" formControlName="nombres">
+                        </div>
+                        <div class="col-md-6">
+                        <label for="c_lname" class="text-black">Apellidos <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="apellidos" name="apellidos" formControlName="apellidos">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                    <div class="col-md-12">
+                    <label for="c_email" class="text-black">DNI / Carnet de Extranjería <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="dni" name="dni" placeholder="" formControlName="dni">
+                    </div>
+                </div>
+            </div> 
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="c_email" class="text-black">Email <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="email" name="c_email" placeholder="" formControlName="email">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="c_email" class="text-black">Contraseña <span class="text-danger">*</span></label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="" formControlName="password">
+                </div>
+              </div>
+              <div class="form-group row">
+                  <div class="col-md-12">
+                  <span class="custom-checkbox">
+                    <label><input name="uso_datos_personales" type="checkbox" value="1" required="" formControlName="acepta1"> Acepto el uso de mis datos personales <br><em>Los datos personales registrados se utilizan para responder consultas, procesar pedidos o permitir el acceso a información específica. Cualquier modificación y/o eliminación de los mismos se puede realizar en la página "Mi cuenta".</em></label>
+                  </span>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <div class="col-md-12">
+                  <span class="custom-checkbox">
+                    <label><input name="suscripcion_boletin" type="checkbox" value="1" required="" formControlName="acepta2"> Suscribirse a nuestro boletín de noticias <br><em>Puede darse de baja en cualquier momento. Para ello, consulte nuestra información de contacto en el aviso legal.</em></label>
+                  </span>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <div class="col-md-12">
+                  <span class="custom-checkbox">
+                    <label><input name="customer_privacy" type="checkbox" value="1" required="" formControlName="acepta3"> Acepto los términos y condiciones y la política de privacidad.</label>
+                  </span>
+                  </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-lg-12">
+                  <button (click)="__onSubmit()" class="btn btn-primary btn-lg btn-block">Crear cuenta</button>
+                </div>
+                <p>Datos del formulario: {{ registerForm.value | json }}</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-5 ml-auto">
+          <div class="p-4 border mb-3">
+            <span class="d-block text-primary h6 text-uppercase">¿Por qué debo registrarme?</span>
+            <p class="mb-0">Al registrarte puedes tener un historial de pedidos y guardar tus direcciones. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis mollitia voluptas, nobis, corporis obcaecati error cum ad est architecto impedit incidunt! Similique exercitationem itaque cumque ullam recusandae blanditiis fugiat repellendus?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
