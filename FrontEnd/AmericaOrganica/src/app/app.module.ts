@@ -15,6 +15,8 @@ import { CarritoComponent } from './pages/carrito/carrito.component';
 import { LoginComponent } from './access/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegistroComponent } from './access/registro/registro.component';
+import { ArticulosComponent } from './pages/articulos/articulos.component';
+import { FavoritosComponent } from './pages/favoritos/favoritos.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { RegistroComponent } from './access/registro/registro.component';
     ContactanosComponent,
     CarritoComponent,
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,
+    ArticulosComponent,
+    FavoritosComponent
   ],
   imports: [
     BrowserModule,

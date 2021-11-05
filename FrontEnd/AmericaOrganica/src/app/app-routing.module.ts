@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './access/login/login.component';
 import { RegistroComponent } from './access/registro/registro.component';
+import { ArticulosComponent } from './pages/articulos/articulos.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
 import { ContactanosComponent } from './pages/contactanos/contactanos.component';
 import { DondeestamosComponent } from './pages/dondeestamos/dondeestamos.component';
+import { FavoritosComponent } from './pages/favoritos/favoritos.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { RecetasComponent } from './pages/recetas/recetas.component';
@@ -21,7 +23,9 @@ const routes: Routes = [
   {path: 'recetas', component: RecetasComponent},
   {path: 'tienda', component: TiendaComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'registro', component: RegistroComponent}
+  {path: 'registro', component: RegistroComponent},
+  {path: 'favoritos', component: FavoritosComponent},
+  {path: 'articulos/:id', component: ArticulosComponent}
 ];
 
 @NgModule({
