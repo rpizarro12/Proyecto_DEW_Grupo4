@@ -9,7 +9,9 @@ import { ContactanosComponent } from './pages/contactanos/contactanos.component'
 import { DondeestamosComponent } from './pages/dondeestamos/dondeestamos.component';
 import { FavoritosComponent } from './pages/favoritos/favoritos.component';
 import { HomeComponent } from './pages/home/home.component';
+import { Impacto360Component } from './pages/impacto360/impacto360.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
+import { QueofrecemosComponent } from './pages/queofrecemos/queofrecemos.component';
 import { RecetasComponent } from './pages/recetas/recetas.component';
 import { TiendaComponent } from './pages/tienda/tienda.component';
 
@@ -20,6 +22,8 @@ const routes: Routes = [
   {path: 'contactanos', component: ContactanosComponent},
   {path: 'dondeestamos', component: DondeestamosComponent},
   {path: 'nosotros', component: NosotrosComponent},
+  {path: 'que-ofrecemos', component:QueofrecemosComponent},
+  {path: 'impacto-360', component:Impacto360Component},
   {path: 'recetas', component: RecetasComponent},
   {path: 'tienda', component: TiendaComponent},
   {path: 'login', component: LoginComponent},

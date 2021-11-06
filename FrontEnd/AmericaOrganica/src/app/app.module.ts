@@ -17,6 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RegistroComponent } from './access/registro/registro.component';
 import { ArticulosComponent } from './pages/articulos/articulos.component';
 import { FavoritosComponent } from './pages/favoritos/favoritos.component';
+import { QueofrecemosComponent } from './pages/queofrecemos/queofrecemos.component';
+import { Impacto360Component } from './pages/impacto360/impacto360.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { FavoritosComponent } from './pages/favoritos/favoritos.component';
     LoginComponent,
     RegistroComponent,
     ArticulosComponent,
-    FavoritosComponent
+    FavoritosComponent,
+    QueofrecemosComponent,
+    Impacto360Component
   ],
   imports: [
     BrowserModule,
