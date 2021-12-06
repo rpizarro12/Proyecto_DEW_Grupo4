@@ -453,9 +453,9 @@
 .icon-star-half:before {
   content: "\f089";
 }
-.icon-heart-o:before {
+/*.icon-heart-o:before {
   content: "\f08a";
-}
+}*/
 .icon-sign-out:before {
   content: "\f08b";
 }
