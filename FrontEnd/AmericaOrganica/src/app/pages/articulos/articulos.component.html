@@ -1,14 +1,15 @@
 
-<div class="site-section">
+<div *ngIf="article[0]!=null" class="site-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <img src="../../../assets/img/kit-pastelero-1-und.jpg" alt="Image" class="img-fluid">
+        <div class="col-md-4">
+          <img src="{{article[0].imagen}}" alt="Image" class="img-fluid">
         </div>
-        <div class="col-md-6">
-          <h2 class="text-black">Kit Pastelero 1 Und</h2>
-          <p>El pack incluye: 01 Agave en polvo orgánico 250 gr + 01 Polvo de cacao orgánico 170 gr + 01 Harina Pastelería Repostería 454 gr</p>
-          <p><strong class="text-primary h4">S/ 54.90</strong></p>
+        <div class="col-md-8">
+          <h2 class="text-black">{{article[0].nombre}}</h2>
+          <h3>Detalle:</h3>
+          <p>{{article[0].detalle}}</p>
+          <p><strong class="text-primary h4">S/ {{article[0].precio}}</strong></p>
           <!-- <div class="mb-1 d-flex">
             <label for="option-sm" class="d-flex mr-3 mb-3">
               <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-sm" name="shop-sizes"></span> <span class="d-inline-block text-black">Small</span>
@@ -42,6 +43,7 @@
     </div>
   </div>
 
+  <!--
   <div class="site-section block-3 site-blocks-2 bg-light">
     <div class="container">
       <div class="row justify-content-center">
@@ -117,3 +119,4 @@
       </div>
     </div>
   </div>
+  -->

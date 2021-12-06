@@ -12,6 +12,6 @@ namespace DBEntity
         public decimal precio { get; set; }
         public string detalle { get; set; }
         public int unidades { get; set; }
-        public EntityImage images { get; set; }
+        public string imagen { get; set; }
     }
 }

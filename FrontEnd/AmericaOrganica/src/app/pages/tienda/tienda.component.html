@@ -45,17 +45,18 @@
           </div>
           <div class="row mb-5">
 
-            <div class="col-sm-6 col-lg-4 mb-4">
+            <div *ngFor="let p of products" class="col-sm-6 col-lg-4 mb-4">
               <div class="block-4 text-center border">
                 <figure class="block-4-image">
-                  <a routerLink="../articulos/1"><img src="../../../assets/img/kit-pastelero-1-und.jpg" alt="Image placeholder" class="img-fluid"></a>
+                  <a routerLink="/articulos/{{p.idproducto}}"><img src="{{p.imagen}}" alt="Image placeholder" class="img-fluid"></a>
                 </figure>
                 <div class="block-4-text p-4">
-                  <h3><a routerLink="../articulos/1">Kit Pastelero 1 Und</a></h3>
-                  <p class="text-primary font-weight-bold">S/.54.90</p>
+                  <h4><a routerLink="/articulos/{{p.idproducto}}">{{p.nombre}}</a></h4>
+                  <p class="text-primary font-weight-bold">S/. {{p.precio}}</p>
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
 

@@ -7,11 +7,13 @@ namespace DBContext
 {
     public interface IProductRepository
     {
-        List<EntityProduct> GetProducts();
+        BaseResponse GetProducts();
 
-        EntityProduct GetProduct(int id);
+        BaseResponse GetProduct(int id);
 
-        List<EntityProduct> GetProductsType(string type);
+        BaseResponse GetProductsType(string type);
+
+        BaseResponse Insert(EntityProduct product);
         
     }
 }

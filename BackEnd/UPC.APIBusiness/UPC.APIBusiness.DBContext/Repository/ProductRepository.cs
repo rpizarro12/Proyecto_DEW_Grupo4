@@ -10,8 +10,9 @@ namespace DBContext
 {
     public class ProductRepository : BaseRepository, IProductRepository
     {
-        public EntityProduct GetProduct(int id)
+        public BaseResponse GetProduct(int id)
         {
+            var returnEntity = new BaseResponse();
             var entityProduct = new EntityProduct();
             
             try
@@ -25,17 +26,35 @@ namespace DBContext
 
                     entityProduct = db.Query<EntityProduct>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
 
+                    if (entityProduct != null)
+                    {
+                        returnEntity.issuccess = true;
+                        returnEntity.errorcode = "0000";
+                        returnEntity.errormessage = string.Empty;
+                        returnEntity.data = entityProduct;
+                    }
+                    else
+                    {
+                        returnEntity.issuccess = false;
+                        returnEntity.errorcode = "0000";
+                        returnEntity.errormessage = string.Empty;
+                        returnEntity.data = null;
+                    }
                 }
             }
             catch(Exception ex)
             {
-
+                returnEntity.issuccess = false;
+                returnEntity.errorcode = "0001";
+                returnEntity.errormessage = ex.Message;
+                returnEntity.data = null;
             }
-            return entityProduct;
+            return returnEntity;
         }
 
-        public List<EntityProduct> GetProducts()
+        public BaseResponse GetProducts()
         {
+            var returnEntity = new BaseResponse();
             var entitiesProducts = new List<EntityProduct>();
             
 
@@ -46,17 +65,36 @@ namespace DBContext
                     const string sql = @"usp_ListarProductos";
 
                     entitiesProducts = db.Query<EntityProduct>(sql: sql, commandType: CommandType.StoredProcedure).ToList();
+
+                    if (entitiesProducts.Count > 0)
+                    {
+                        returnEntity.issuccess = true;
+                        returnEntity.errorcode = "0000";
+                        returnEntity.errormessage = string.Empty;
+                        returnEntity.data = entitiesProducts;
+                    }
+                    else
+                    {
+                        returnEntity.issuccess = false;
+                        returnEntity.errorcode = "0000";
+                        returnEntity.errormessage = string.Empty;
+                        returnEntity.data = null;
+                    }
                 }
             }
             catch(Exception ex)
             {
-
+                returnEntity.issuccess = false;
+                returnEntity.errorcode = "0001";
+                returnEntity.errormessage = ex.Message;
+                returnEntity.data = null;
             }
-            return entitiesProducts;
+            return returnEntity;
         }
 
-        public List<EntityProduct> GetProductsType(string type)
+        public BaseResponse GetProductsType(string type)
         {
+            var returnEntity = new BaseResponse();
             var entitiesProducts = new List<EntityProduct>();
 
             try
@@ -69,13 +107,36 @@ namespace DBContext
                     p.Add(name: "@TIPO", value: type, dbType: DbType.String, direction: ParameterDirection.Input);
 
                     entitiesProducts = db.Query<EntityProduct>(sql: sql, param: p, commandType: CommandType.StoredProcedure).ToList();
+
+                    if (entitiesProducts.Count > 0)
+                    {
+                        returnEntity.issuccess = true;
+                        returnEntity.errorcode = "0000";
+                        returnEntity.errormessage = string.Empty;
+                        returnEntity.data = entitiesProducts;
+                    }
+                    else
+                    {
+                        returnEntity.issuccess = false;
+                        returnEntity.errorcode = "0000";
+                        returnEntity.errormessage = string.Empty;
+                        returnEntity.data = null;
+                    }
                 }
             }
             catch(Exception ex)
             {
-
+                returnEntity.issuccess = false;
+                returnEntity.errorcode = "0001";
+                returnEntity.errormessage = ex.Message;
+                returnEntity.data = null;
             }
-            return entitiesProducts;
+            return returnEntity;
+        }
+
+        public BaseResponse Insert(EntityProduct product)
+        {
+            throw new NotImplementedException();
         }
     }
 }
