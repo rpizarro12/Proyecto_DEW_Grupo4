@@ -16,6 +16,7 @@ import { RecetasComponent } from './pages/recetas/recetas.component';
 import { TiendaComponent } from './pages/tienda/tienda.component';
 
 const routes: Routes = [
+  {path:'',redirectTo:'home',pathMatch:'full'},
   {path: 'home', component: HomeComponent},
   {path: 'blog', component: BlogComponent},
   {path: 'carrito', component: CarritoComponent},
