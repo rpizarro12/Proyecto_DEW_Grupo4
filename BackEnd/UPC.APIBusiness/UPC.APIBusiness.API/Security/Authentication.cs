@@ -6,7 +6,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace UPC.E31A.APIBusiness.API.Security
+namespace UPC.E31B.APIBusiness.API.Security
 {
     /// <summary>
     /// 

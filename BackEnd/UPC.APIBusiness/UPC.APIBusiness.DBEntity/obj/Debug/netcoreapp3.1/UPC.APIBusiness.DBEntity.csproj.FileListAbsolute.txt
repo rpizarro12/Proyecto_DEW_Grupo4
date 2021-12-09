@@ -26,3 +26,13 @@ C:\Users\Usuario Legal\Desktop\Proyecto\ProyectoDW\Proyecto_DEW_Grupo4\BackEnd\U
 C:\Users\Usuario Legal\Desktop\Proyecto\ProyectoDW\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.csproj.CoreCompileInputs.cache
 C:\Users\Usuario Legal\Desktop\Proyecto\ProyectoDW\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
 C:\Users\Usuario Legal\Desktop\Proyecto\ProyectoDW\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBEntity\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.deps.json
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBEntity\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBEntity\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.csproj.AssemblyReference.cache
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.AssemblyInfoInputs.cache
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.AssemblyInfo.cs
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.csproj.CoreCompileInputs.cache
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb
