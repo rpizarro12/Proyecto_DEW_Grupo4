@@ -6,11 +6,14 @@ import { ArticulosComponent } from './pages/articulos/articulos.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
 import { ContactanosComponent } from './pages/contactanos/contactanos.component';
+import { DireccionesComponent } from './pages/direcciones/direcciones.component';
 import { DondeestamosComponent } from './pages/dondeestamos/dondeestamos.component';
 import { FavoritosComponent } from './pages/favoritos/favoritos.component';
 import { HomeComponent } from './pages/home/home.component';
 import { Impacto360Component } from './pages/impacto360/impacto360.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
+import { LogoutComponent } from './pages/pedidos/logout.component';
+import { PedidosComponent } from './pages/pedidos/pedidos.component';
 import { QueofrecemosComponent } from './pages/queofrecemos/queofrecemos.component';
 import { RecetasComponent } from './pages/recetas/recetas.component';
 import { TiendaComponent } from './pages/tienda/tienda.component';
@@ -30,7 +33,10 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'registro', component: RegistroComponent},
   {path: 'favoritos', component: FavoritosComponent},
-  {path: 'articulos/:id', component: ArticulosComponent}
+  {path: 'articulos/:id', component: ArticulosComponent},
+  {path: 'pedidos', component: PedidosComponent},
+  {path: 'direcciones', component: DireccionesComponent},
+  {path: 'logout', component: LogoutComponent}
 ];
 
 @NgModule({

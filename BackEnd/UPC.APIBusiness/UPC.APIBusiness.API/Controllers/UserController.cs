@@ -40,7 +40,7 @@ namespace UPC.Business.API.Controllers
         }
 
         /// <summary>
-        /// 
+        /// RPM: Cambio de Authorize por AllowAnonymous para permitir registro
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
@@ -50,6 +50,14 @@ namespace UPC.Business.API.Controllers
         [Route("insert")]
         public ActionResult Insert(EntityUser user)
         {
+            var identity = User.Identity as ClaimsIdentity;
+            IEnumerable<Claim> claims = identity.Claims;
+
+            //var idusuario = claims.Where(p => p.Type == "client_codigo_usuario").FirstOrDefault()?.Value;
+            var documentoidentidad = claims.Where(p => p.Type == "client_numero_documento").FirstOrDefault()?.Value;
+
+            //user.UsuarioCrea = int.Parse(idusuario);
+                        
             var ret = _UserRepository.Insert(user);
             return Json(ret);
         }

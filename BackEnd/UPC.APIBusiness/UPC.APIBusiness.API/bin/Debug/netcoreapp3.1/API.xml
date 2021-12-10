@@ -363,7 +363,7 @@
         </member>
         <member name="M:UPC.Business.API.Controllers.UserController.Insert(DBEntity.EntityUser)">
             <summary>
-            
+            RPM: Cambio de Authorize por AllowAnonymous para permitir registro
             </summary>
             <param name="user"></param>
             <returns></returns>

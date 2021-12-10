@@ -19,7 +19,8 @@
         <div class="col-6 col-md-4 order-3 order-md-3 text-right">
           <div class="site-top-icons">
             <ul>
-              <li><a routerLink="login"><span class="icon icon-person"></span></a></li>
+              <li *ngIf="token != null"><a routerLink="pedidos"><span class="icon icon-person"></span>Bienvenido, {{user}}</a></li>
+              <li *ngIf="token == null"><a routerLink="login"><span class="icon icon-person"></span>Iniciar Sesión</a></li>
               <li><a routerLink="favoritos"><span class="icon icon-heart-o"></span></a></li>
               <li>
                 <a routerLink="carrito" class="site-cart">
