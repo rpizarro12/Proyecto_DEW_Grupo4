@@ -24,3 +24,16 @@ C:\Users\Usuario Legal\Desktop\Proyecto\ProyectoDW\Proyecto_DEW_Grupo4\BackEnd\U
 C:\Users\Usuario Legal\Desktop\Proyecto\ProyectoDW\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.csproj.CopyComplete
 C:\Users\Usuario Legal\Desktop\Proyecto\ProyectoDW\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.dll
 C:\Users\Usuario Legal\Desktop\Proyecto\ProyectoDW\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.pdb
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.csproj.AssemblyReference.cache
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.AssemblyInfoInputs.cache
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.AssemblyInfo.cs
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.csproj.CoreCompileInputs.cache
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.dll
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.pdb
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.deps.json
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.dll
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.pdb
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb
+C:\Users\renz1\Desktop\DEW\ProyectoGrupo4\Proyecto_DEW_Grupo4\BackEnd\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.csproj.CopyComplete

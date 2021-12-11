@@ -233,6 +233,24 @@
             <param name="cancellationToken"></param>
             <returns></returns>
         </member>
+        <member name="T:API.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:API.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:API.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
         <member name="T:API.Startup">
             <summary>
             /
@@ -343,43 +361,51 @@
             </summary>
             <param name="UserRepository"></param>
         </member>
-        <member name="M:UPC.Business.API.Controllers.UserController.Get">
+        <member name="M:UPC.Business.API.Controllers.UserController.Insert(DBEntity.EntityUser)">
             <summary>
-            GetListUser
+            RPM: Cambio de Authorize por AllowAnonymous para permitir registro
             </summary>
+            <param name="user"></param>
             <returns></returns>
         </member>
-        <member name="T:UPC.E31A.APIBusiness.API.Security.AccessToken">
+        <member name="M:UPC.Business.API.Controllers.UserController.Login(DBEntity.EntityLogin)">
+            <summary>
+            
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UPC.E31B.APIBusiness.API.Security.AccessToken">
             <summary>
             
             </summary>
         </member>
-        <member name="P:UPC.E31A.APIBusiness.API.Security.AccessToken.access_token">
+        <member name="P:UPC.E31B.APIBusiness.API.Security.AccessToken.access_token">
             <summary>
             
             </summary>
         </member>
-        <member name="P:UPC.E31A.APIBusiness.API.Security.AccessToken.token_type">
+        <member name="P:UPC.E31B.APIBusiness.API.Security.AccessToken.token_type">
             <summary>
             
             </summary>
         </member>
-        <member name="P:UPC.E31A.APIBusiness.API.Security.AccessToken.scope">
+        <member name="P:UPC.E31B.APIBusiness.API.Security.AccessToken.scope">
             <summary>
             
             </summary>
         </member>
-        <member name="P:UPC.E31A.APIBusiness.API.Security.AccessToken.expires_in">
+        <member name="P:UPC.E31B.APIBusiness.API.Security.AccessToken.expires_in">
             <summary>
             
             </summary>
         </member>
-        <member name="T:UPC.E31A.APIBusiness.API.Security.Authentication">
+        <member name="T:UPC.E31B.APIBusiness.API.Security.Authentication">
             <summary>
             
             </summary>
         </member>
-        <member name="M:UPC.E31A.APIBusiness.API.Security.Authentication.GenerateToken(System.String,System.String)">
+        <member name="M:UPC.E31B.APIBusiness.API.Security.Authentication.GenerateToken(System.String,System.String)">
             <summary>
             
             </summary>

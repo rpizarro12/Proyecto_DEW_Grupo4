@@ -10,6 +10,7 @@ using System.Net;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using UPC.E31B.APIBusiness.API.Security;
 
 namespace UPC.Business.API.Controllers
 {
@@ -18,6 +19,7 @@ namespace UPC.Business.API.Controllers
     /// </summary>
     [Produces("application/json")]
     [Route("api/User")]
+    [ApiController]
     public class UserController : Controller
     {
 
@@ -38,20 +40,56 @@ namespace UPC.Business.API.Controllers
         }
 
         /// <summary>
-        /// GetListUser
+        /// RPM: Cambio de Authorize por AllowAnonymous para permitir registro
         /// </summary>
+        /// <param name="user"></param>
         /// <returns></returns>
         [Produces("application/json")]
-        [SwaggerOperation("GetListUser")]
         [AllowAnonymous]
-        [HttpGet]
-        [Route("GetListUser")]
-        public ActionResult Get()
+        [HttpPost]
+        [Route("insert")]
+        public ActionResult Insert(EntityUser user)
         {
-            var ret = _UserRepository.GetUsers();
+            var identity = User.Identity as ClaimsIdentity;
+            IEnumerable<Claim> claims = identity.Claims;
 
-            if (ret == null)
-                return StatusCode(401);
+            //var idusuario = claims.Where(p => p.Type == "client_codigo_usuario").FirstOrDefault()?.Value;
+            var documentoidentidad = claims.Where(p => p.Type == "client_numero_documento").FirstOrDefault()?.Value;
+
+            //user.UsuarioCrea = int.Parse(idusuario);
+                        
+            var ret = _UserRepository.Insert(user);
+            return Json(ret);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="login"></param>
+        /// <returns></returns>
+        [Produces("application/json")]
+        [AllowAnonymous]
+        [HttpPost]
+        [Route("login")]
+        public async Task<ActionResult> Login(EntityLogin login)
+        {
+            var ret = _UserRepository.Login(login);
+
+            if(ret.data!=null)
+            {
+                var loginresponse = ret.data as EntityLoginResponse;
+                var idusuario = loginresponse.idusuario.ToString();
+                var documentoidentidad = loginresponse.documentoidentidad;
+
+                var token = JsonConvert
+                    .DeserializeObject<AccessToken>(
+                        await new Authentication()
+                        .GenerateToken(documentoidentidad, idusuario)
+                    ).access_token;
+
+                loginresponse.token = token;
+                ret.data = loginresponse;
+            }
 
             return Json(ret);
         }

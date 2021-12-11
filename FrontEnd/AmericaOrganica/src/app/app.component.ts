@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AmericaOrganica';
+  token = sessionStorage.getItem('token');
+  user = sessionStorage.getItem('user');
 }

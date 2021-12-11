@@ -19,6 +19,8 @@ import { ArticulosComponent } from './pages/articulos/articulos.component';
 import { FavoritosComponent } from './pages/favoritos/favoritos.component';
 import { QueofrecemosComponent } from './pages/queofrecemos/queofrecemos.component';
 import { Impacto360Component } from './pages/impacto360/impacto360.component';
+import { PedidosComponent } from './pages/pedidos/pedidos.component';
+import { DireccionesComponent } from './pages/direcciones/direcciones.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { Impacto360Component } from './pages/impacto360/impacto360.component';
     ArticulosComponent,
     FavoritosComponent,
     QueofrecemosComponent,
-    Impacto360Component
+    Impacto360Component,
+    PedidosComponent,
+    DireccionesComponent
   ],
   imports: [
     BrowserModule,
