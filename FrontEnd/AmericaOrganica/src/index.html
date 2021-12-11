@@ -67,11 +67,34 @@
             <form action="#" method="post">
               <label for="email_subscribe" class="footer-heading">Suscríbete a nuestro boletín</label>
               <div class="form-group">
+                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+                <script type="text/javascript">
+                  var app = angular.module('MyApp', [])
+                  app.controller('MyController', function ($scope, $window) {
+                    $scope.ShowAlert = function () {
+                      $window.alert("Enviado correctamente");
+                    }
+                  });
+                </script>
+                <input type="text" class="form-control py-4" id="email_subscribe" placeholder="Email">
+                <div ng-app="MyApp" ng-controller="MyController">
+                  <input type="button" class="btn btn-sm btn-primary" value="Send" ng-click="ShowAlert()">
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!--
+          <div class="block-7">
+            <form action="#" method="post">
+              <label for="email_subscribe" class="footer-heading">Suscríbete a nuestro boletín</label>
+              <div class="form-group">
                 <input type="text" class="form-control py-4" id="email_subscribe" placeholder="Email">
                 <input type="submit" class="btn btn-sm btn-primary" value="Send">
               </div>
             </form>
           </div>
+          -->
         </div>
       </div>
       <div class="row pt-5 mt-5 text-center">
