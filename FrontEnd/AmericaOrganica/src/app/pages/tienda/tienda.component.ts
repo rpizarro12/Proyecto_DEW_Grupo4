@@ -1,5 +1,6 @@
 import { analyzeAndValidateNgModules } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { ArticleService } from 'src/app/services/article.service';
 import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
@@ -12,7 +13,7 @@ export class TiendaComponent implements OnInit {
   products:any=[];
   var:any;
 
-  constructor(private readonly ps:ProductsService) { }
+  constructor(private readonly ps:ProductsService, private cart:ArticleService) { }
 
   _getProducts(){
     this.ps._getProducts().subscribe((rest:any) => {

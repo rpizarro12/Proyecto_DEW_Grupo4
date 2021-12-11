@@ -1,11 +1,4 @@
-<div class="bg-light py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 mb-0"><a routerLink="../home">Inicio</a> <span class="mx-2 mb-0">/</span><strong class="text-black">Tienda</strong></div>
-      </div>
-    </div>
-  </div>
-  
+
   <div class="site-section">
     <div class="container">
 
@@ -16,7 +9,7 @@
             <div class="col-md-12 mb-5">
               <div class="float-md-left mb-4"><h2 class="text-black h5">Todos Nuestros Productos</h2></div>
               <div class="d-flex">
-                <div class="dropdown mr-1 ml-md-auto">
+                <!--<div class="dropdown mr-1 ml-md-auto">
                   <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Filtros
                   </button>
@@ -29,7 +22,7 @@
                     <a class="dropdown-item" href="#">Por Precio, mayor a menor</a>
                   </div>
                 </div>
-                <!-- <div class="btn-group">
+                 <div class="btn-group">
                   <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" id="dropdownMenuReference" data-toggle="dropdown">Filtros2</button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
                     <a class="dropdown-item" href="#">Los más comprados</a>
@@ -52,7 +45,7 @@
                 </figure>
                 <div class="block-4-text p-4">
                   <h4><a routerLink="/articulos/{{p.idproducto}}">{{p.nombre}}</a></h4>
-                  <p class="text-primary font-weight-bold">S/. {{p.precio}}</p>
+                  <p class="text-primary font-weight-bold">S/. {{p.precio.toFixed(2)}}</p>
                 </div>
               </div>
             </div>
