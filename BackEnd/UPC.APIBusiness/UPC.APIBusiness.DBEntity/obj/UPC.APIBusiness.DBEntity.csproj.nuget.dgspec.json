@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario Legal\\Desktop\\Proyecto\\ProyectoDW\\Proyecto_DEW_Grupo4\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj": {}
+    "C:\\Users\\renz1\\Desktop\\DEW\\ProyectoGrupo4\\Proyecto_DEW_Grupo4\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario Legal\\Desktop\\Proyecto\\ProyectoDW\\Proyecto_DEW_Grupo4\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj": {
+    "C:\\Users\\renz1\\Desktop\\DEW\\ProyectoGrupo4\\Proyecto_DEW_Grupo4\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario Legal\\Desktop\\Proyecto\\ProyectoDW\\Proyecto_DEW_Grupo4\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj",
+        "projectUniqueName": "C:\\Users\\renz1\\Desktop\\DEW\\ProyectoGrupo4\\Proyecto_DEW_Grupo4\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj",
         "projectName": "UPC.APIBusiness.DBEntity",
-        "projectPath": "C:\\Users\\Usuario Legal\\Desktop\\Proyecto\\ProyectoDW\\Proyecto_DEW_Grupo4\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj",
-        "packagesPath": "C:\\Users\\Usuario Legal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario Legal\\Desktop\\Proyecto\\ProyectoDW\\Proyecto_DEW_Grupo4\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\obj\\",
+        "projectPath": "C:\\Users\\renz1\\Desktop\\DEW\\ProyectoGrupo4\\Proyecto_DEW_Grupo4\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj",
+        "packagesPath": "C:\\Users\\renz1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\renz1\\Desktop\\DEW\\ProyectoGrupo4\\Proyecto_DEW_Grupo4\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Usuario Legal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\renz1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
